@@ -1,0 +1,163 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.11 (19/6/14)
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Elizabeth} % Your first name
+\familyname{Polgreen} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+
+\address{12 Farmer Place}{Oxford OX3 0LB}
+\mobile{+44 7955 356629}
+\email{elizabeth.polgreen@cs.ox.ac.uk}
+
+
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+\cventry{2019 -- present}{Postdoctoral Research Scholar}{Computer Science}{The University of California, Berkeley}{}
+{I work in Professor Sanjit Seshia's group. I am interested in integration of synthesis into verification techniques.}
+\cventry{2016 -- 2019}{PhD candidate}{Computer Science}{The University of Oxford}{}{Program synthesis without syntactic templates. \\Thesis submission: August 2019.\\Viva: November 2019}  
+
+\cventry{2010 -- 2011}{Masters of Engineering}{Electrical and Electronic Engineering}{The University of Cambridge}{}{}  
+\cventry{2007 -- 2010}{Bachelor of Arts}{Electrical and Electronic Engineering}{The University of Cambridge}{}{}
+%\cvitem{A-Levels}{4 As in Mathematics, Further Mathematics, Physics and Chemistry}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\section{Publications}
+
+\cventry{}{CounterExample Guided Inductive Synthesis modulo Theories}{A.~Abate, C.~David, P.~Kesseli, D.~Kroening, E.~Polgreen}{Computer Aided Verification (CAV)}{2018}{}
+
+\cventry{}{Automated Formal Synthesis of Digital Controllers for State-Space Physical Plants}{A.~Abate, I.~Bessa, D.~Cattaruzza, L.~Cordeiro, C.~David, P.~Kesseli, D.~Kroening, and E.~Polgreen} {Computer Aided Verification (CAV)}{2017}{}
+
+\cventry{}{DSSynth: An Automated Digital Controller Synthesis Tool for Physical Plants}{A.~Abate, I.~Bessa, D.~Cattaruzza, L.~Chaves, L.~Cordeiro, C.~David, P.~Kesseli, D.~Kroening, and E.~Polgreen}{Automated Software Engineering (ASM)}{2017}{}
+
+
+
+\cventry{}{Automated Experiment Design for Efficient Verification of Parametric Markov Decision Processes}{E.~Polgreen, V.~Wijesuriya, S.~Hasaert, A.~Abate} {Quantitative Evaluation of SysTems (QEST)}{2017}{}
+
+\cventry{}{Data-efficient Bayesian Verification of Parametric Markov Chains}{E.~Polgreen, V.~Wijesuriya, S.~Haesaert, A.~Abate} {Quantitative Evaluation of SysTems (QEST)}{2016}{}
+
+\section{Work in progress or under submission}
+
+\cventry{}{Probabilistic IC3: a New Symbolic Model Checking Algorithm for Markov Chains}{E.~Polgreen, M.~Brain, M.~Fraenzle, A.~Abate} {}{}{}
+
+\cventry{}{CounterExample Guided Neural Synthesis}{E.~Polgreen, R.~Abboud, D.~Kroening} {}{}{}
+
+\section{Talks}
+
+\cventry{}{CounterExample Guided Inductive Synthesis modulo Theories}{}{Computer Aided Verification (CAV)}{2018}{}
+
+\cventry{}{Automated Experiment Design for Efficient Verification of Parametric Markov Decision Processes}{} {Quantitative Evaluation of SysTems (QEST)}{2017}{}
+
+\cventry{}{Data-efficient Bayesian Verification of Parametric Markov Chains}{} {Quantitative Evaluation of SysTems (QEST)}{2016}{}
+
+\section{Co-supervision}
+\cventry{MSc project}{CounterExample Guided Neural Synthesis}{}{}{}{}
+
+\section{Service}
+\cventry{}{Program committees}{}{}{}{SYNT 2019}{}{}{}{}
+\cventry{}{Reviewer}{}{}{}{Acta Informatica, SYNT 2019, Robotics: Science and Systems 2017, SOFSEM-FOCS2017, QEST 2016, QEST 2017,13th International Workshop on Discrete Event Systems}{}{}{}{}
+
+\section{Experience}
+
+\cventry{June 2018 -- September 2018}{Software Development Intern}{Amazon Web Services, Dresden}{}{}{Continuation of previous internship applying formal verification techniques to C code for an x86 hypervisor}
+
+\cventry{August 2017 -- October 2017}{Software Development Intern}{Amazon Web Services, Dresden}{}{}{Development of analysis tools based on formal methods for hot-patching an x86 hypervisor}
+
+\cventry{September 2015 -- March 2016}{Research Assistant in Verification}{Department of Computer Science, University of Oxford}{}{}{Working with Professor Alessandro Abate on application of machine learning techniques in verification. This work produced the paper published at QEST 2016}
+
+\cventry{September 2013 -- August 2015}{Research Support}{Department of Computer Science, University of Oxford}{}{}{Lead aspects of research project execution over a broad variety of research projects within the Systems Verification and Validation group.}
+
+%------------------------------------------------
+
+\cventry{January 2013 -- August 2013}{Electronics and Software Engineer}{Peach Innovations}{Cambridge}{}{Manufacture, testing and debugging of real-time rowing instrumentation systems. Analysis of system output data with view to new product development.}
+
+%------------------------------------------------
+
+\cventry{August 2011 -- January 2013}{Electronics and Software Engineer}{Eg Technology}{Cambridge}{}{Design engineer developing electronics hardware and software for a variety of consumer and medical devices. Main contributor of C code to embedded software projects using ARM microcontrollers. Further experience in LabVIEW, and contributing to larger team projects written in C\#.}
+
+%\section{Masters Project}
+
+%\cvitem{Title}{\emph{Development of a data transmission system for remote robotic control}}
+%\cvitem{Supervisors}{Professor Tim Flack}
+%\cvitem{Description}{This project covers the development of a complete wireless data transmission system in order to provide remote control of a robotic arm. The merits of different modulation, encoding and transmission technologies were considered and key digital and analogue components of the system were simulated using open source simulation software}
+
+
+
+\section{Teaching}
+\cventry{Lecture}{Introduction to IC3}{}{Computer Aided Verification Course, Oxford}{}{}
+
+\cventry{Work experience}{Key Stage 2 work experience}{}{Various secondary schools in Oxfordshire}{}{}
+
+
+\section{Other skills and interests}
+\cventry{2010 -- 2011}{President of Cambridge University Women's Boat Club}{}{}{}{I lead a team of 30 athletes to compete at national and international events. I worked with the executive committee and the 
+coaching team to ensure smooth day-to-day running of a high-performing club.}
+\cventry{2017 -- 2019}{Marathon Coach - Oxford University Canoe Kayak Club}{}{}{}{I run weekly flat-water kayaking sessions for Oxford University students, and organise the annual varsity race} 
+%\cventry{2019}{GB Canoe Marathon}{}{}{}{I represented Great Britain in 2019 at the canoe marathon world cup}{}{}{}
+\cventry{2011 -- 2014} {Elite lightweight rower}{}{}{}{Four-time British Champion. I represented England in 2012 and 2014.}
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Languages}
+
+%\cvitemwithcomment{English}{Mothertongue}{}
+%\cvitemwithcomment{French}{GCSE A*}{}
+%\cvitemwithcomment{German}{GCSE A*}{}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+%\cvitem{Rowing}{Multiple national champion between 2011 and 2014. President of the university team 2010-11}
+
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
