@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.3)  15 FEB 2022 12:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.3)  15 FEB 2022 15:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -559,23 +559,23 @@ er-ence on Ver-i-fi-ca-tion, Model Check-ing, and Ab-stract
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
  [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./cv_polgreen.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 173.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 173.
 Package rerunfilecheck Info: File `cv_polgreen.out' has not changed.
 (rerunfilecheck)             Checksum: 8048A7C2A100A72CD51148FF6EFA5D17;702.
  ) 
 Here is how much of TeX's memory you used:
- 12680 strings out of 480608
- 197194 string characters out of 5903631
+ 12678 strings out of 480608
+ 197172 string characters out of 5903631
  590973 words of memory out of 5000000
  28307 multiletter control sequences out of 15000+600000
- 584500 words of font info for 80 fonts, out of 8000000 for 9000
+ 584399 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,13n,69p,777b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,12n,69p,777b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/20
 20/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2020/texmf-d
@@ -583,7 +583,7 @@ ist/fonts/type1/public/lm/lmss17.pfb></usr/local/texlive/2020/texmf-dist/fonts/
 type1/public/lm/lmssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/pu
 blic/lm/lmsso10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/marv
 osym/marvosym.pfb>
-Output written on cv_polgreen.pdf (3 pages, 127449 bytes).
+Output written on cv_polgreen.pdf (3 pages, 127313 bytes).
 PDF statistics:
  82 PDF objects out of 1000 (max. 8388607)
  69 compressed objects within 1 object stream
