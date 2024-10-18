@@ -1,0 +1,138 @@
+\documentclass{federico_cv}
+
+\frenchspacing
+
+\lhead{Dr Elizabeth Polgreen}
+
+\usepackage[backend=biber,style=numeric,refsection=section,maxbibnames=99,sorting=none,defernumbers=true,uniquename=false]{biblatex}
+\renewcommand*{\bibfont}{\small}
+\renewbibmacro{in:}{}
+\DeclareNameFormat{family}{%
+  \usebibmacro{name:family}
+    {\namepartfamily}
+    {\namepartgiven}
+    {\namepartprefix}
+    {\namepartsuffix}%
+  \usebibmacro{name:andothers}}
+
+\DeclareNameAlias{default}{family}
+
+\DeclareNameAlias{sortname}{default}
+\DeclareNameAlias{labelname}{default}
+
+\bibliography{cv}
+
+\begin{document}
+
+\contact{Elizabeth Polgreen}
+{polgreen.github.io}
+{elizabeth.polgreen@ed.ac.uk}
+
+\begin{flushleft}
+\begin{halfTblSubSection}{Education}{0.1}{0.85}
+\degree{2020}{Ph.D. Computer Science} 
+{Advised by \link{https://www.cs.ox.ac.uk/people/alessandro.abate/home.html}{Alessandro Abate}}
+{\link{https://www.cs.ox.ac.uk/}{University of Oxford}}
+\degree{2011}{Masters of Engineering}
+{Electrical and Electronic Engineering,}
+{\link{https://www.eng.cam.ac.uk/}{University of Cambridge}}
+\degree{2010}{Bacheler of Arts}
+{Electrical and Electronic Engineering,}
+{\link{https://www.eng.cam.ac.uk/}{University of Cambridge}}
+\end{halfTblSubSection}
+% \hfill
+~~~~~~~~ % spaces out the two columns because \hfill is too long for some reason
+\begin{halfTblSubSection}{Employment}{0.1}{0.85}
+\job{\multirow{ 2}{\hsize}{\small{2020-current }}}{Lecturer in Informatics}{University of Edinburgh}
+\job{\multirow{ 2}{\hsize}{\small{2019-2020}}}{Visiting Research Scholar}{University of Calfornia, Berkeley}{Advised by Sanjit A. Seshia}
+\job{\multirow{ 2}{\hsize}{\small{2017, 2018}}}{Software Development Intern}
+{Amazon Web Services}
+\job{\multirow{ 2}{\hsize}{\small{2015-2016}}}{Research Assistant in Verification}{Department of Computer Science, University of Oxford}
+\job{\multirow{ 2}{\hsize}{\small{2013-2015}}}{Research Support}{Department of Computer Science, University of Oxford}
+\job{\multirow{ 2}{\hsize}{\small{2011-2013}}}{Electronics and Software Engineer}
+{Eg Technology, Cambridge.}{Peach Innovations, Cambridge.}
+
+\end{halfTblSubSection}
+\end{flushleft}
+
+\section{Research}
+
+I am interested in formal program synthesis techniques and the use of synthesis to increase the scalability of verification. 
+
+\nocite{*}
+\printbibliography[heading=subbibliography,keyword={full},title={Refereed Conference and Journal Papers \hfill }]
+% \printbibliography[heading=subbibliography,keyword={journal},title={Refereed Journal Papers}]
+\printbibliography[heading=subbibliography,keyword={workshop},title={Refereed Workshop Papers or Presentations}]
+\printbibliography[heading=subbibliography,keyword={other},title={Language Standards, Editorships, etc.}]
+\printbibliography[heading=subbibliography,keyword={toappear},title={Papers under submission}]
+
+\begin{tblSubSection}{Funding}{0.1}{0.88}
+\grant{2023}{\link{https://www.amazon.science/research-awards/program-updates/79-amazon-research-awards-recipients-announced}{Amazon Research Award}}
+{``Program Synthesis for Code Modernization''}
+\grant{2023}{\link{
+https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-awardees/research-fellowships-awardees/2023-2028/dr-elizabeth-polgreen}{Royal Academy of Engineering Research Fellowship}}{``Automated and Provably Correct Code Modernization''}
+
+\end{tblSubSection}
+
+
+\begin{tblSubSection}{Invited Talks}{0.1}{0.88}
+\grant{2024}{Making the Most of Large Language Models for Program Synthesis (when you want correct answers)}{Keynote, 13th Workshop on Synthesis}
+\grant{2024}{Using Program Synthesis to Make Your Code Run Faster}{Annual Meeting of the Research Institute on Verified Trustworthy Software Systems (VeTSS)}
+\grant{2023}{Sherlock Holmes and the Case of the Untrustworthy Software}{TedX University of Edinburgh.}
+\grant{2022}{Beyond Counterexamples: Synthesis Modulo Oracles} {11th Workshop on Synthesis}
+\grant{2022}{UCLID5: multi-modal modeling, synthesis and verification}{3rd Workshop on Democratizing Software Verification.}
+\grant{2022}{Model checking Xen}{Verified Software Workshop, Isaac Newton Institute for Mathematical Sciences.}
+\grant{2021}{CounterExample Guided Inductive Synthesis Modulo Theories}{The Simons Institute for the Theory of Computing.}
+\end{tblSubSection}
+
+
+
+\section{Teaching and Mentoring}
+My Royal Academy of Engineering fellowship currently limits the amount of teaching I am able to do, but the list of courses I have taught prior to this fellowship is below.
+
+
+\begin{tblSubSection}{Courses Taught}{0.1}{0.85}
+\job{2024}{System Design Project, University of Edinburgh} 
+\job{2023}{System Design Project, University of Edinburgh} 
+\job{2022}{Formal Verification, University of Edinburgh} 
+\job{2022}{Introduction to SAT/SMT, Scottish Programming Languages Summer School} 
+\end{tblSubSection}
+
+
+\section{Service}
+
+\begin{tblSubSection}{Professional Service}{0.95}{0}
+\service{Co-organizer}
+{\link{https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23391}{Dagstuhl Seminar on the Futures of Reactive Synthesis} (2023)}
+
+\service{Workshop Chair}
+{\link{https://workshops.inf.ed.ac.uk/SYNT2021/}{ International Workshop on Synthesis (SYNT)} (2021)}
+
+\service{Program Committee Member}
+{Tools and Algorithms for the Construction and Analysis of Systems (TACAS \textquotesingle25)}
+{Computer Aided Verification (CAV \textquotesingle24)}
+{ International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI \textquotesingle24)}
+{International Conference on Systems, Programming, Languages and Applications: Software for Humanity, Student Research Competition (SPLASH \textquotesingle24)}
+{Computer Aided Verification (CAV \textquotesingle23)}
+{International Workshop on Synthesis (SYNT \textquotesingle23)}
+{Workshop on the Democratization of Software Verification (DSV \textquotesingle23)}
+{International Workshop on Satisfiability Modulo Theories (SMT \textquotesingle22)}
+{The International Conference on Theory and Applications of Satisfiability Testing (SAT \textquotesingle22)}
+{Computer Aided Verification (CAV \textquotesingle22)}
+{Formal Methods in Computer Aided Design (FMCAD \textquotesingle22)}
+{International Conference on Quantitative Evaluation of SysTems (QEST \textquotesingle22)}
+{Formal Methods in Computer Aided Design (FMCAD \textquotesingle21)}
+{International Conference on Quantitative Evaluation of SysTems (QEST \textquotesingle21)}
+{International Workshop on Synthesis (SYNT \textquotesingle19)}
+
+
+\service{Artifact Evaluation Committee Member}
+{Computer Aided Verification (CAV \textquotesingle21)}
+{Tools and Algorithms for the Construction and Analysis of Systems (TACAS \textquotesingle21)}
+
+\service{Non-program committee reviews}
+{Acta Informatica, Acta Informatica, Transactions on Programming Languages and Systems, Robotics: Science and Systems 2017, CAV 2021, SOFSEM-FOCS2017, QEST 2017, QEST 2016, Information and Software Technology, 13th International Workshop on Discrete Event Systems}
+
+\end{tblSubSection}
+
+\end{document}
