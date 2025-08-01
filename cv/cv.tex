@@ -2,9 +2,9 @@
 
 \frenchspacing
 
-\lhead{Dr Elizabeth Polgreen}
+\lhead{Dr. Elizabeth Polgreen}
 
-\usepackage[backend=biber,style=numeric,refsection=section,maxbibnames=99,sorting=none,defernumbers=true,uniquename=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\usepackage[backend=biber,style=apa,refsection=section,maxbibnames=99,sorting=none,defernumbers=true,uniquename=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \renewcommand*{\bibfont}{\small}
 \renewbibmacro{in:}{}
 \DeclareNameFormat{family}{%
@@ -24,14 +24,19 @@
 
 \begin{document}
 
-\contact{Elizabeth Polgreen}
+\contact{Dr. Elizabeth Polgreen}
 {polgreen.github.io}
 {elizabeth.polgreen@ed.ac.uk}
+
+ 
+
+% \noindent Dr. Elizabeth Polgreen is an assistant professor in the School of Informatics at the University of Edinburgh and a Royal Academy of Engineering Research Fellow. She received a Bachelors and Masters in Electrical and Electronic Engineering from the University of Cambridge and a PhD in Computer Science from the University of Oxford. From 2019 to 2020, she was a visiting research scholar in the Department of Electrical Engineering and Computer Sciences at the University of California, Berkeley.
+% Her research focuses on formal synthesis algorithms, the integration of machine learning with formal synthesis, and the application of formal synthesis to modernizing legacy code.
 
 \begin{flushleft}
 \begin{halfTblSubSection}{Education}{0.1}{0.85}
 \degree{2020}{Ph.D. Computer Science} 
-{Advised by \link{https://www.cs.ox.ac.uk/people/alessandro.abate/home.html}{Alessandro Abate}}
+{Advised by Alessandro Abate}
 {\link{https://www.cs.ox.ac.uk/}{University of Oxford}}
 \degree{2011}{Masters of Engineering}
 {Electrical and Electronic Engineering,}
@@ -43,12 +48,13 @@
 % \hfill
 ~~~~~~~~ % spaces out the two columns because \hfill is too long for some reason
 \begin{halfTblSubSection}{Employment}{0.1}{0.85}
-\job{\multirow{ 2}{\hsize}{\small{2020-current }}}{Lecturer in Informatics}{University of Edinburgh}
-\job{\multirow{ 2}{\hsize}{\small{2019-2020}}}{Visiting Research Scholar}{University of Calfornia, Berkeley}{Advised by Sanjit A. Seshia}
+\job{\multirow{ 2}{\hsize}{\small{2025-current }}}{Associate Professor}{ School of Informatics,}{University of Edinburgh}
+\job{\multirow{ 2}{\hsize}{\small{2020-2025 }}}{Assistant Professor}{ School of Informatics,}{University of Edinburgh}
+\job{\multirow{ 2}{\hsize}{\small{2019-2020}}}{Visiting Research Scholar}{University of California, Berkeley}{Advised by Sanjit A. Seshia}
 \job{\multirow{ 2}{\hsize}{\small{2017, 2018}}}{Software Development Intern}
 {Amazon Web Services}
-\job{\multirow{ 2}{\hsize}{\small{2015-2016}}}{Research Assistant in Verification}{Department of Computer Science, University of Oxford}
-\job{\multirow{ 2}{\hsize}{\small{2013-2015}}}{Research Support}{Department of Computer Science, University of Oxford}
+\job{\multirow{ 2}{\hsize}{\small{2015-2016}}}{Research Assistant in Verification}{University of Oxford}
+\job{\multirow{ 2}{\hsize}{\small{2013-2015}}}{Research Support}{University of Oxford}
 \job{\multirow{ 2}{\hsize}{\small{2011-2013}}}{Electronics and Software Engineer}
 {Eg Technology, Cambridge.}{Peach Innovations, Cambridge.}
 
@@ -58,17 +64,19 @@
 
 
 \nocite{*}
+
 \printbibliography[heading=subbibliography,keyword={full},title={Refereed Conference and Journal Papers \hfill }]
-% \printbibliography[heading=subbibliography,keyword={journal},title={Refereed Journal Papers}]
 \printbibliography[heading=subbibliography,keyword={workshop},title={Refereed Workshop Papers or Presentations}]
 \printbibliography[heading=subbibliography,keyword={other},title={Language Standards, Editorships, etc.}]
 \printbibliography[heading=subbibliography,keyword={toappear},title={Papers under submission}]
 
 \begin{tblSubSection}{Funding}{0.1}{0.88}
-\grant{2023}{\link{https://www.amazon.science/research-awards/program-updates/79-amazon-research-awards-recipients-announced}{Amazon Research Award}}
-{``Program Synthesis for Code Modernization''}
+\grant{2025}{\link{https://www.darpa.mil/research/programs/translating-all-c-to-rust}{DARPA}, \normalfont{$ \$450,000$}}
+\grant{2023}{\link{https://www.amazon.science/research-awards/program-updates/79-amazon-research-awards-recipients-announced}{Amazon Research Award}, \normalfont{$ \$50,000$}}
+% {``Program Synthesis for Code Modernization''}
 \grant{2023}{\link{
-https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-awardees/research-fellowships-awardees/2023-2028/dr-elizabeth-polgreen}{Royal Academy of Engineering Research Fellowship}}{``Automated and Provably Correct Code Modernization''}
+https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-awardees/research-fellowships-awardees/2023-2028/dr-elizabeth-polgreen}{Royal Academy of Engineering Research Fellowship}, \normalfont{$ \textsterling 589,657$}}
+% {``Automated and Provably Correct Code Modernization''}
 
 \end{tblSubSection}
 
@@ -87,6 +95,7 @@ https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/suppo
 
 
 \begin{tblSubSection}{Teaching}{0.1}{0.85}
+\job{2025}{Introduction to Program Synthesis, VeTSS Summer School, Glasgow}
 \job{2024}{System Design Project, University of Edinburgh}
 \job{2023}{System Design Project, University of Edinburgh} 
 \job{2022}{Formal Verification, University of Edinburgh} 
@@ -97,12 +106,17 @@ https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/suppo
 
 \begin{tblSubSection}{Professional Service}{0.95}{0}
 \service{Co-organizer}
+{\link{https://conferences.i-cav.org/2025/mentoring/}{CAV Verification Mentoring Workshop} (2025)}
 {\link{https://www.dagstuhl.de/en/seminars/seminar-calendar/seminar-details/23391}{Dagstuhl Seminar on the Futures of Reactive Synthesis} (2023)}
+
 
 \service{Workshop Chair}
 {\link{https://workshops.inf.ed.ac.uk/SYNT2021/}{ International Workshop on Synthesis (SYNT)} (2021)}
 
 \service{Program Committee Member}
+{Annual AAAI Conference on Artificial Intelligence (AAAI \textquotesingle26)}
+{International Workshop on Synthesis (SYNT \textquotesingle25)}
+{Computer Aided Verification (CAV \textquotesingle25)}
 {Tools and Algorithms for the Construction and Analysis of Systems (TACAS \textquotesingle25)}
 {Computer Aided Verification (CAV \textquotesingle24)}
 { International Conference on Verification, Model Checking, and Abstract Interpretation (VMCAI \textquotesingle24)}
@@ -125,7 +139,7 @@ https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/suppo
 {Tools and Algorithms for the Construction and Analysis of Systems (TACAS \textquotesingle21)}
 
 \service{Non-program committee reviews}
-{Acta Informatica, Acta Informatica, Transactions on Programming Languages and Systems, Robotics: Science and Systems 2017, CAV 2021, SOFSEM-FOCS2017, QEST 2017, QEST 2016, Information and Software Technology, 13th International Workshop on Discrete Event Systems}
+{Acta Informatica, Transactions on Programming Languages and Systems, Robotics: Science and Systems 2017, CAV 2021, SOFSEM-FOCS2017, QEST 2017, QEST 2016, Information and Software Technology, 13th International Workshop on Discrete Event Systems}
 
 \end{tblSubSection}
 
