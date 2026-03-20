@@ -1,15 +1,38 @@
+@inproceedings{de2026accelerating,
+  title={Accelerating Sparse Algebra with Program Synthesis},
+  author={de Souza Magalh{\~a}es, Jos{\'e} Wesley and Hashemian, Shideh and Brauckmann, Alexander and Woodruff, Jackson and Polgreen, Elizabeth and O’Boyle, Michael FP},
+  booktitle={Proceedings of the 35th ACM SIGPLAN International Conference on Compiler Construction},
+  pages={106--118},
+  year={2026},
+  keywords = "full"
+}
+
 @inproceedings{konrul,
   author       = {Jos{\'{e}} Wesley de Souza Magalh{\~{a}}es and
                   Alexander Brauckmann and
                   Luc Jaulmes and
                   Elizabeth Polgreen and
                   Michael F. P. O'Boyle},
-  title        = {Guess, Measure and Edit: Using Lowering to Lift Tensor Code},
+  title        = {Guess, {M}easure and {E}dit: Using Lowering to Lift Tensor Code},
   booktitle    = {34th International Conference on Parallel Architectures and Compilation
                   Techniques, {PACT} 2025},
   year         = {2025},
   keywords = "full"
 }
+
+@inproceedings{cgo-tensorize,
+  author       = {Alexander Brauckmann and
+  Jos{\'{e}} Wesley de Souza Magalh{\~{a}}es 
+                  Aarsh Chaube and
+                  Elizabeth Polgreen and
+                  Michael F. P. O'Boyle},
+  title        = {Tensor Program Superoptimization through Cost-Guided Symbolic Program Synthesis},
+  booktitle    = {Proceedings of the 24th {ACM/IEEE} International Symposium on Code
+                  Generation and Optimization, {CGO} 2025},
+  year = {2026},
+  keywords = "full"
+}
+
 
 
 @inproceedings{DBLP:journals/corr/abs-2503-03207,
@@ -20,7 +43,7 @@
                   Elizabeth Polgreen and
                   Edward A. Lee and
                   Sanjit A. Seshia},
-  title        = {PolyVer: {A} Compositional Approach for Polyglot System Modeling and
+  title        = {{PolyVer}: {A} Compositional Approach for Polyglot System Modeling and
                   Verification},
   booktitle    = {2025 Formal Methods in Computer Aided Design, {FMCAD} 2025},
   year         = {2025},
@@ -31,7 +54,7 @@
   author       = {Guy Frankel and Rudi Schneider and Michel Steuwer and Elizabeth Polgreen},
   title        = {Syntax-Guided Synthesis with CounterExample Guided
 {E}-graphs: A Work-In-Progress Report},
-  booktitle    = {23rd International Workshop on Satisfiability Modulo Theories, August 10–11, 2025, Glasgow, UK},
+  booktitle    = {{23rd International Workshop on Satisfiability Modulo Theories}, August 10–11, 2025, {Glasgow}, UK},
   year         = {2025},
   keywords = "workshop"
 }
@@ -45,31 +68,38 @@
 }
 
 
-@article{li2025guided,
-  title={Guided tensor lifting},
-  author={Li, Yixuan and Magalh{\~a}es, Jos{\'e} Wesley de Souza and Brauckmann, Alexander and O'Boyle, Michael FP and Polgreen, Elizabeth},
-  journal={Proceedings of the ACM on Programming Languages},
-  volume={9},
-  number={PLDI},
-  pages={1984--2006},
-  year={2025},
-  publisher={ACM New York, NY, USA},
-  keywords = "full"
+@article{DBLP:journals/pacmpl/LiMBOP25,
+  author       = {Yixuan Li and
+                  Jos{\'{e}} Wesley de Souza Magalh{\~{a}}es and
+                  Alexander Brauckmann and
+                  Michael F. P. O'Boyle and
+                  Elizabeth Polgreen},
+  title        = {Guided Tensor Lifting},
+  journal      = {Proc. {ACM} Program. Lang.},
+  volume       = {9},
+  number       = {{PLDI}},
+  pages        = {1984--2006},
+  year         = {2025},
+  url          = {https://doi.org/10.1145/3729330},
+  doi          = {10.1145/3729330},
+  timestamp    = {Thu, 11 Sep 2025 20:24:03 +0200},
+  biburl       = {https://dblp.org/rec/journals/pacmpl/LiMBOP25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org},
+  keyword  = "full"
 }
 
-@article{DBLP:journals/corr/abs-2504-09998,
+@inproceedings{DBLP:journals/corr/abs-2504-09998,
   author       = {Alejandro Luque{-}Cerpa and
                   Elizabeth Polgreen and
                   Ajitha Rajan and
                   Hazem Torfah},
   title        = {Metric-Guided Synthesis of Class Activation Mapping},
-  journal      = {XAI},
+  journal      = {{XAI}},
   year         = {2025},
   url          = {https://doi.org/10.48550/arXiv.2504.09998},
   doi          = {10.48550/ARXIV.2504.09998},
   eprinttype    = {arXiv},
   eprint       = {2504.09998},
-  timestamp    = {Wed, 21 May 2025 01:00:00 +0200},
   biburl       = {https://dblp.org/rec/journals/corr/abs-2504-09998.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org},
   keywords = "full"
@@ -136,8 +166,8 @@
   title        = {Tensorize: Fast Synthesis of Tensor Programs from Legacy Code using
                   Symbolic Tracing, Sketching and Solving},
   booktitle    = {Proceedings of the 23rd {ACM/IEEE} International Symposium on Code
-                  Generation and Optimization, {CGO} 2025, Las Vegas, NV, USA, March
-                  1-5, 2025},
+                  Generation and Optimization, {CGO} 2025, {Las Vegas, NV, USA, March
+                  1-5}, 2025},
   pages        = {15--30},
   publisher    = {{ACM}},
   year         = {2025},
@@ -235,7 +265,7 @@
   bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 
-@article{DBLP:journals/corr/abs-2406-03636,
+@inproceedings{DBLP:conf/nips/0002WLBEVGPS24,
   author       = {Federico Mora and
                   Justin Wong and
                   Haley Lepe and
@@ -244,20 +274,25 @@
                   George Varghese and
                   Joseph E. Gonzalez and
                   Elizabeth Polgreen and
-                  Sanjit A. Seshia},
-  title        = {Synthetic Programming Elicitation and Repair for Text-to-Code in Very
-                  Low-Resource Programming Languages},
-  journal      = {to appear at Neurips},
-  volume       = {abs/2406.03636},
+                  Sanjit Seshia},
+  editor       = {Amir Globersons and
+                  Lester Mackey and
+                  Danielle Belgrave and
+                  Angela Fan and
+                  Ulrich Paquet and
+                  Jakub M. Tomczak and
+                  Cheng Zhang},
+  title        = {Synthetic Programming Elicitation for Text-to-Code in Very Low-Resource
+                  Programming and Formal Languages},
+  booktitle    = {Advances in Neural Information Processing Systems 38: Annual Conference
+                  on Neural Information Processing Systems 2024, NeurIPS 2024, Vancouver,
+                  BC, Canada, December 10 - 15, 2024},
   year         = {2024},
-  url          = {https://doi.org/10.48550/arXiv.2406.03636},
-  doi          = {10.48550/ARXIV.2406.03636},
-  eprinttype    = {arXiv},
-  eprint       = {2406.03636},
-  timestamp    = {Fri, 05 Jul 2024 01:00:00 +0200},
-  biburl       = {https://dblp.org/rec/journals/corr/abs-2406-03636.bib},
+  url          = {http://papers.nips.cc/paper\_files/paper/2024/hash/bde1c75d7d89e64d6d93dce1c68dc3d8-Abstract-Conference.html},
+  timestamp    = {Thu, 13 Feb 2025 16:56:44 +0100},
+  biburl       = {https://dblp.org/rec/conf/nips/0002WLBEVGPS24.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org},
-  keywords = "full, ara"
+  keywords = "full"
 }
 
 @article{DBLP:journals/jar/AbateBBDKKPRT23,

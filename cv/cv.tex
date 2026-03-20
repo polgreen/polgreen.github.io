@@ -4,7 +4,7 @@
 
 \lhead{Dr. Elizabeth Polgreen}
 
-\usepackage[backend=biber,style=apa,refsection=section,maxbibnames=99,sorting=none,defernumbers=true,uniquename=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
+\usepackage[backend=biber,style=numeric,refsection=section,maxbibnames=99,sorting=none,defernumbers=true,uniquename=false,doi=false,isbn=false,url=false,eprint=false]{biblatex}
 \renewcommand*{\bibfont}{\small}
 \renewbibmacro{in:}{}
 \DeclareNameFormat{family}{%
@@ -15,7 +15,9 @@
     {\namepartsuffix}%
   \usebibmacro{name:andothers}}
 
-\DeclareNameAlias{default}{family}
+% \DeclareNameAlias{default}{family}
+\DeclareNameAlias{default}{first-last}
+
 
 \DeclareNameAlias{sortname}{default}
 \DeclareNameAlias{labelname}{default}
@@ -35,13 +37,13 @@
 
 \begin{flushleft}
 \begin{halfTblSubSection}{Education}{0.1}{0.85}
-\degree{2020}{Ph.D. Computer Science} 
+\degree{\multirow{ 2}{\hsize}{\small{2016-2020}}}{Ph.D. Computer Science} 
 {Advised by Alessandro Abate}
 {\link{https://www.cs.ox.ac.uk/}{University of Oxford}}
-\degree{2011}{Masters of Engineering}
+\degree{\multirow{ 2}{\hsize}{\small{2010-2021}}}{Masters of Engineering}
 {Electrical and Electronic Engineering,}
 {\link{https://www.eng.cam.ac.uk/}{University of Cambridge}}
-\degree{2010}{Bacheler of Arts}
+\degree{\multirow{ 2}{\hsize}{\small{2007-2010}}}{Bacheler of Arts}
 {Electrical and Electronic Engineering,}
 {\link{https://www.eng.cam.ac.uk/}{University of Cambridge}}
 \end{halfTblSubSection}
@@ -72,23 +74,26 @@
 
 \begin{tblSubSection}{Funding}{0.1}{0.88}
 \grant{2025}{\link{https://www.darpa.mil/research/programs/translating-all-c-to-rust}{DARPA}, \normalfont{$ \$450,000$}}
+{``Formally-Verified Compositional Lifting of C to Rust''}
 \grant{2023}{\link{https://www.amazon.science/research-awards/program-updates/79-amazon-research-awards-recipients-announced}{Amazon Research Award}, \normalfont{$ \$50,000$}}
-% {``Program Synthesis for Code Modernization''}
+{``Program Synthesis for Code Modernization''}
 \grant{2023}{\link{
 https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/support-for-research/research-awardees/research-fellowships-awardees/2023-2028/dr-elizabeth-polgreen}{Royal Academy of Engineering Research Fellowship}, \normalfont{$ \textsterling 589,657$}}
-% {``Automated and Provably Correct Code Modernization''}
+{``Automated and Provably Correct Code Modernization''}
 
 \end{tblSubSection}
 
 
 \begin{tblSubSection}{Invited Talks}{0.1}{0.88}
+\grant{2025}{Language Model Guided Synthesis for Lifting}{The Simons Institute for the Theory of Computing}
+\grant{2025}{Making the Most of Large Language Models for Program Synthesis (when you want correct answers)}{British Colloquium for Theoretical Computer Science}
 \grant{2024}{Making the Most of Large Language Models for Program Synthesis (when you want correct answers)}{Keynote, 13th Workshop on Synthesis}
 \grant{2024}{Using Program Synthesis to Make Your Code Run Faster}{Annual Meeting of the Research Institute on Verified Trustworthy Software Systems (VeTSS)}
-\grant{2023}{Sherlock Holmes and the Case of the Untrustworthy Software}{TedX University of Edinburgh.}
+\grant{2023}{Sherlock Holmes and the Case of the Untrustworthy Software}{TedX University of Edinburgh}
 \grant{2022}{Beyond Counterexamples: Synthesis Modulo Oracles} {11th Workshop on Synthesis}
-\grant{2022}{UCLID5: multi-modal modeling, synthesis and verification}{3rd Workshop on Democratizing Software Verification.}
-\grant{2022}{Model checking Xen}{Verified Software Workshop, Isaac Newton Institute for Mathematical Sciences.}
-\grant{2021}{CounterExample Guided Inductive Synthesis Modulo Theories}{The Simons Institute for the Theory of Computing.}
+\grant{2022}{UCLID5: multi-modal modeling, synthesis and verification}{3rd Workshop on Democratizing Software Verification}
+\grant{2022}{Model checking Xen}{Verified Software Workshop, Isaac Newton Institute for Mathematical Sciences}
+\grant{2021}{CounterExample Guided Inductive Synthesis Modulo Theories}{The Simons Institute for the Theory of Computing}
 \end{tblSubSection}
 
 
@@ -114,6 +119,9 @@ https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/suppo
 {\link{https://workshops.inf.ed.ac.uk/SYNT2021/}{ International Workshop on Synthesis (SYNT)} (2021)}
 
 \service{Program Committee Member}
+{Symposium on Principles of Programming Languages (POPL \textquotesingle27)}
+{International Workshop on Synthesis (SYNT \textquotesingle26)}
+{Object-oriented Programming, Systems, Languages, and Applications (OOPSLA \textquotesingle26)}
 {Annual AAAI Conference on Artificial Intelligence (AAAI \textquotesingle26)}
 {International Workshop on Synthesis (SYNT \textquotesingle25)}
 {Computer Aided Verification (CAV \textquotesingle25)}
@@ -123,6 +131,7 @@ https://raeng.org.uk/programmes-and-prizes/programmes/uk-grants-and-prizes/suppo
 {International Conference on Systems, Programming, Languages and Applications: Software for Humanity, Student Research Competition (SPLASH \textquotesingle24)}
 {Computer Aided Verification (CAV \textquotesingle23)}
 {International Workshop on Synthesis (SYNT \textquotesingle23)}
+{Workshop on Principles of Secure Compilation (PRiSC \textquotesingle23)}
 {Workshop on the Democratization of Software Verification (DSV \textquotesingle23)}
 {International Workshop on Satisfiability Modulo Theories (SMT \textquotesingle22)}
 {The International Conference on Theory and Applications of Satisfiability Testing (SAT \textquotesingle22)}
