@@ -48,6 +48,18 @@ html, body {
   margin: 10px 0;
 }
 
+.news-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.news-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
 .right {
 /*  background-color: lightblue;*/
   margin: 20px;
