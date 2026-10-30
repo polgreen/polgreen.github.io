@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Binturong Happy Hour</title>
+<style>
+  html,body{margin:0;height:100%;background:radial-gradient(ellipse at 50% 30%,#2b2350 0%,#140f26 70%);font-family:Georgia,serif;color:#e9dcc4}
+  .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+  svg{width:100%;max-width:480px;height:auto}
+  p{margin:8px 0 0;font-size:14px;opacity:.75;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+<svg viewBox="0 0 400 420" role="img" aria-label="A binturong sitting on a branch sipping a cocktail">
+  <defs>
+    <linearGradient id="drink" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb35c"/><stop offset="1" stop-color="#ff5d7a"/>
+    </linearGradient>
+    <radialGradient id="fur" cx="45%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#3d3630"/><stop offset="1" stop-color="#1c1814"/>
+    </radialGradient>
+    <clipPath id="bowl"><polygon points="261,214 309,214 285,244"/></clipPath>
+  </defs>
+
+  <!-- sky -->
+  <circle cx="330" cy="70" r="30" fill="#f6eccb" opacity=".9"/>
+  <circle cx="320" cy="62" r="5" fill="#e3d6ae" opacity=".7"/>
+  <g fill="#fff">
+    <circle cx="40" cy="50" r="1.6"><animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="110" cy="30" r="1.2"><animate attributeName="opacity" values=".3;1;.3" dur="3.1s" repeatCount="indefinite"/></circle>
+    <circle cx="250" cy="40" r="1.4"><animate attributeName="opacity" values="1;.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="70" cy="120" r="1"><animate attributeName="opacity" values=".4;1;.4" dur="1.9s" repeatCount="indefinite"/></circle>
+    <circle cx="370" cy="150" r="1.3"><animate attributeName="opacity" values="1;.4;1" dur="3.4s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- tail (wraps below branch) -->
+  <path d="M150,300 C110,335 105,385 150,388 C190,390 195,352 168,350" fill="none" stroke="#221d19" stroke-width="22" stroke-linecap="round">
+    <animateTransform attributeName="transform" type="rotate" values="-4 150 300;5 150 300;-4 150 300" dur="3.5s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- branch -->
+  <path d="M-10,322 C80,312 160,330 240,318 C300,310 360,322 410,314" stroke="#5a3b24" stroke-width="20" fill="none" stroke-linecap="round"/>
+  <path d="M60,318 q-20,-30 -45,-35" stroke="#5a3b24" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <ellipse cx="18" cy="282" rx="14" ry="7" fill="#3f7a4a" transform="rotate(-25 18 282)"/>
+  <ellipse cx="370" cy="306" rx="16" ry="7" fill="#3f7a4a" transform="rotate(-15 370 306)"/>
+
+  <!-- body -->
+  <ellipse cx="200" cy="245" rx="68" ry="78" fill="url(#fur)"/>
+  <g stroke="#6a5e52" stroke-width="1.5" stroke-linecap="round" opacity=".7">
+    <path d="M160,220 l-6,8M172,260 l-5,9M230,250 l6,8M215,285 l4,9M185,295 l-4,8M240,280 l5,7M150,265 l-6,6M205,230 l3,8"/>
+  </g>
+  <!-- feet -->
+  <ellipse cx="172" cy="318" rx="16" ry="8" fill="#1c1814"/>
+  <ellipse cx="228" cy="318" rx="16" ry="8" fill="#1c1814"/>
+  <!-- left paw resting -->
+  <path d="M155,215 Q140,260 160,300" stroke="#221d19" stroke-width="20" fill="none" stroke-linecap="round"/>
+
+  <!-- head -->
+  <g>
+    <animateTransform attributeName="transform" type="rotate" values="0 200 190;0 200 190;-3 200 190;-3 200 190;0 200 190;0 200 190" keyTimes="0;.2;.25;.75;.8;1" dur="4s" repeatCount="indefinite"/>
+    <!-- ears with tufts -->
+    <path d="M158,128 L150,92 L180,112 Z" fill="#221d19"/>
+    <path d="M152,95 l-4,-8 M155,94 l0,-9 M158,96 l3,-8" stroke="#d9cdb8" stroke-width="2" stroke-linecap="round"/>
+    <path d="M242,128 L250,92 L220,112 Z" fill="#221d19"/>
+    <path d="M248,95 l4,-8 M245,94 l0,-9 M242,96 l-3,-8" stroke="#d9cdb8" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="200" cy="150" r="48" fill="url(#fur)"/>
+    <!-- grizzled brow -->
+    <path d="M168,128 q32,-14 64,0" stroke="#8a7d6d" stroke-width="2" fill="none" opacity=".6"/>
+    <!-- muzzle -->
+    <ellipse cx="200" cy="168" rx="24" ry="17" fill="#6d6154"/>
+    <ellipse cx="200" cy="161" rx="7" ry="5" fill="#120e0b"/>
+    <path d="M192,176 Q196,181 200,176 Q204,181 208,176" stroke="#120e0b" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <!-- cheeks blush while sipping -->
+    <g fill="#ff7f8f" opacity="0">
+      <circle cx="172" cy="165" r="6"/><circle cx="228" cy="165" r="6"/>
+      <animate attributeName="opacity" values="0;0;.55;.55;0;0" keyTimes="0;.2;.25;.75;.8;1" dur="4s" repeatCount="indefinite"/>
+    </g>
+    <!-- open eyes -->
+    <g>
+      <animate attributeName="opacity" values="1;1;0;0;1;1" keyTimes="0;.2;.25;.75;.8;1" dur="4s" repeatCount="indefinite"/>
+      <circle cx="182" cy="142" r="5.5" fill="#3b2412"/><circle cx="218" cy="142" r="5.5" fill="#3b2412"/>
+      <circle cx="184" cy="140" r="1.8" fill="#fff"/><circle cx="220" cy="140" r="1.8" fill="#fff"/>
+    </g>
+    <!-- happy closed eyes -->
+    <g stroke="#d9cdb8" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.2;.25;.75;.8;1" dur="4s" repeatCount="indefinite"/>
+      <path d="M176,143 q6,-6 12,0"/><path d="M212,143 q6,-6 12,0"/>
+    </g>
+    <!-- whiskers -->
+    <g stroke="#f2ead9" stroke-width="1.2" stroke-linecap="round" opacity=".9">
+      <path d="M182,168 q-30,-6 -52,-2M182,172 q-28,2 -50,10M184,175 q-22,8 -40,22"/>
+      <path d="M218,168 q30,-6 52,-2M218,172 q28,2 50,10"/>
+    </g>
+  </g>
+
+  <!-- drinking arm + cocktail -->
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0;0 0;-2 -7;-2 -7;0 0;0 0" keyTimes="0;.2;.25;.75;.8;1" dur="4s" repeatCount="indefinite"/>
+    <!-- straw -->
+    <line x1="292" y1="236" x2="209" y2="185" stroke="#7fe0d0" stroke-width="4" stroke-linecap="round"/>
+    <line x1="292" y1="236" x2="209" y2="185" stroke="#fff" stroke-width="4" stroke-dasharray="4 6" stroke-linecap="round" opacity=".7"/>
+    <!-- bubbles going up the straw -->
+    <g fill="#ffcf8a" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;.22;.26;.72;.76;1" dur="4s" repeatCount="indefinite"/>
+      <circle r="2.2"><animateMotion path="M292,236 L209,185" dur=".7s" repeatCount="indefinite"/></circle>
+      <circle r="2.2"><animateMotion path="M292,236 L209,185" dur=".7s" begin=".23s" repeatCount="indefinite"/></circle>
+      <circle r="2.2"><animateMotion path="M292,236 L209,185" dur=".7s" begin=".46s" repeatCount="indefinite"/></circle>
+    </g>
+    <!-- liquid -->
+    <rect x="255" y="216" width="60" height="40" fill="url(#drink)" clip-path="url(#bowl)">
+      <animate attributeName="y" values="216;216;225;225;233;233;242;216" keyTimes="0;.083;.25;.417;.583;.75;.917;1" dur="12s" repeatCount="indefinite"/>
+    </rect>
+    <!-- glass -->
+    <polygon points="258,212 312,212 285,247" fill="#cfe9ff" fill-opacity=".18" stroke="#e8f4ff" stroke-width="2" stroke-linejoin="round"/>
+    <line x1="285" y1="247" x2="285" y2="280" stroke="#e8f4ff" stroke-width="2.5"/>
+    <ellipse cx="285" cy="281" rx="14" ry="3" fill="#e8f4ff" opacity=".9"/>
+    <!-- garnish: cherry + umbrella -->
+    <circle cx="263" cy="208" r="6" fill="#d91d3f"/><circle cx="261" cy="206" r="1.6" fill="#fff" opacity=".7"/>
+    <path d="M263,203 q2,-10 8,-12" stroke="#3f7a4a" stroke-width="1.5" fill="none"/>
+    <line x1="305" y1="214" x2="316" y2="186" stroke="#c9a46a" stroke-width="1.5"/>
+    <path d="M300,190 Q316,172 332,182 Z" fill="#ff5d7a"/>
+    <path d="M308,184 L316,186 M316,178 L316,186 M324,180 L316,186" stroke="#ffd36e" stroke-width="1"/>
+    <!-- arm + paw -->
+    <path d="M245,205 Q276,232 280,262" stroke="#221d19" stroke-width="20" fill="none" stroke-linecap="round"/>
+    <ellipse cx="284" cy="266" rx="11" ry="9" fill="#1c1814"/>
+    <path d="M276,262 q8,4 16,0" stroke="#3d3630" stroke-width="1.5" fill="none"/>
+  </g>
+
+  <!-- buttered-popcorn aroma puffs -->
+  <g fill="#fff3c4">
+    <g opacity="0"><circle cx="140" cy="200" r="5"/><circle cx="146" cy="196" r="4"/><circle cx="135" cy="196" r="3.5"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-14 -90" dur="5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.85;0" dur="5s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="128" cy="230" r="4.5"/><circle cx="133" cy="226" r="3.5"/><circle cx="124" cy="226" r="3"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-20 -100" dur="5s" begin="1.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.8;0" dur="5s" begin="1.7s" repeatCount="indefinite"/></g>
+    <g opacity="0"><circle cx="150" cy="180" r="4"/><circle cx="155" cy="177" r="3"/><circle cx="146" cy="177" r="3"/>
+      <animateTransform attributeName="transform" type="translate" values="0 0;-8 -80" dur="5s" begin="3.4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;.8;0" dur="5s" begin="3.4s" repeatCount="indefinite"/></g>
+  </g>
+</svg>
+<p>Happy hour in the canopy. (Fun fact: binturongs smell like buttered popcorn.)</p>
+</div>
+</body>
+</html>
